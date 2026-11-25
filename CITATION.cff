@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the version of EMG-Lab used in your work. Add the repository URL or commit when available."
+type: software
+title: "EMG-Lab: Neural Engineering and Biosignal Analysis Toolkit"
+version: "1.1"
+date-released: "2026-11-25"
+authors:
+  - family-names: Li
+    given-names: Jincheng
+abstract: "A local Python and browser-based toolkit for receiving a commercial dual-channel sEMG module's serial stream, documenting hardware integration, replaying recordings, exploring signal features, and studying neural engineering through bilingual interactive notes."
+keywords:
+  - electromyography
+  - biosignal acquisition
+  - neural engineering
+  - signal processing
+  - macOS
+  - serial communication

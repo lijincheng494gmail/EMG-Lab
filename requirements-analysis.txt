@@ -1,0 +1,3 @@
+# The application itself only needs requirements.txt.
+-r requirements.txt
+matplotlib>=3.8

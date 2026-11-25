@@ -1,0 +1,796 @@
+{
+  "analysis_version": "1.1",
+  "recording_date_as_reported": "2026-11-25",
+  "total_received_frames": 71287,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "script_sha256": "e82efb796b488c557cb57629b0bf04819fd9ad7ac38a2b27bfd529d664a71685",
+  "method": {
+    "amplitude_unit": "device counts; no voltage or force calibration",
+    "centered_rms": "sqrt(mean((x - mean(x))**2)); population normalization",
+    "time_axis": "host_elapsed_s minus first host_elapsed_s within each CSV",
+    "physical_sampling_rate": "unknown",
+    "psd": "Welch; fs=1; Hann; nperseg=min(2048,n); 50% overlap; constant detrending",
+    "activity_selection": "retrospective 1 s host bins; either channel centered RMS >45 counts; merge consecutive bins",
+    "condition_labels": "author-reported order; each of five intended actions repeated twice",
+    "single_channel_phase_labels": "assumed proposed 5 s alternating schedule; no event log supplied",
+    "single_channel_exclusion": "peaks f0 and 2*f0; halfwidth0.005 cycles/frame; nperseg1024 per phase"
+  },
+  "recordings": [
+    {
+      "record_id": "F01",
+      "filename": "20261125_223305_3a8c7d.csv",
+      "description": "Floating CH2 lead, first capture",
+      "sha256": "63145e4ba8f1e3f45b3fd1eced819d51322715479a291b85f0f12b222915ae28",
+      "size_bytes": 567410,
+      "rows": 9387,
+      "first_host_elapsed_s": 696.783359208,
+      "last_host_elapsed_s": 726.911614,
+      "host_span_s": 30.128254792000007,
+      "received_frames_per_s": 311.53480561019006,
+      "first_frame_index": 219171,
+      "last_frame_index": 228557,
+      "nonunit_frame_increments": 0,
+      "equal_adjacent_host_timestamps": 82,
+      "equal_adjacent_host_timestamp_pct": 0.8736415938632005,
+      "decreasing_host_timestamps": 0,
+      "source_kinds": [
+        "device"
+      ],
+      "channels": {
+        "ch1": {
+          "mean_counts": 1504.7276020027698,
+          "centered_rms_counts": 4.680917817940268,
+          "minimum_counts": 1484,
+          "maximum_counts": 1529,
+          "zero_count": 0,
+          "code_4095_count": 0,
+          "boundary_code_pct": 0.0,
+          "largest_positive_psd_peak_cycles_per_frame": 0.16064453125
+        },
+        "ch2": {
+          "mean_counts": 2429.5515074038562,
+          "centered_rms_counts": 1995.2486234922962,
+          "minimum_counts": 0,
+          "maximum_counts": 4095,
+          "zero_count": 3674,
+          "code_4095_count": 5419,
+          "boundary_code_pct": 96.86800894854586,
+          "largest_positive_psd_peak_cycles_per_frame": 0.16064453125
+        }
+      },
+      "device_fields": {
+        "ch1_mean": {
+          "minimum": 1502,
+          "maximum": 1502,
+          "unique_values": 1
+        },
+        "ch1_adc": {
+          "minimum": 1484,
+          "maximum": 1529,
+          "unique_values": 40
+        },
+        "ch1_power": {
+          "minimum": 1,
+          "maximum": 10,
+          "unique_values": 10
+        },
+        "ch1_level": {
+          "minimum": 0,
+          "maximum": 0,
+          "unique_values": 1
+        },
+        "ch2_mean": {
+          "minimum": 2480,
+          "maximum": 2480,
+          "unique_values": 1
+        },
+        "ch2_adc": {
+          "minimum": 0,
+          "maximum": 4095,
+          "unique_values": 272
+        },
+        "ch2_power": {
+          "minimum": 1615,
+          "maximum": 2332,
+          "unique_values": 371
+        },
+        "ch2_level": {
+          "minimum": 0,
+          "maximum": 254,
+          "unique_values": 254
+        }
+      }
+    },
+    {
+      "record_id": "F02",
+      "filename": "20261125_223514_6791e0.csv",
+      "description": "Floating CH2 lead, after reconnect",
+      "sha256": "9baa94aca43452e0b0e6fe20a468af0b16ccf5c4173a8dcbd0a64054290fcafe",
+      "size_bytes": 551189,
+      "rows": 9572,
+      "first_host_elapsed_s": 17.041798125,
+      "last_host_elapsed_s": 47.423854709,
+      "host_span_s": 30.382056583999997,
+      "received_frames_per_s": 315.02146582928634,
+      "first_frame_index": 5337,
+      "last_frame_index": 14908,
+      "nonunit_frame_increments": 0,
+      "equal_adjacent_host_timestamps": 97,
+      "equal_adjacent_host_timestamp_pct": 1.0134782154424826,
+      "decreasing_host_timestamps": 0,
+      "source_kinds": [
+        "device"
+      ],
+      "channels": {
+        "ch1": {
+          "mean_counts": 1506.0188048474718,
+          "centered_rms_counts": 4.592397912673275,
+          "minimum_counts": 1486,
+          "maximum_counts": 1526,
+          "zero_count": 0,
+          "code_4095_count": 0,
+          "boundary_code_pct": 0.0,
+          "largest_positive_psd_peak_cycles_per_frame": 0.3173828125
+        },
+        "ch2": {
+          "mean_counts": 1728.718658587547,
+          "centered_rms_counts": 1988.5359790262016,
+          "minimum_counts": 0,
+          "maximum_counts": 4095,
+          "zero_count": 5136,
+          "code_4095_count": 3791,
+          "boundary_code_pct": 93.26159632260762,
+          "largest_positive_psd_peak_cycles_per_frame": 0.3173828125
+        }
+      },
+      "device_fields": {
+        "ch1_mean": {
+          "minimum": 1502,
+          "maximum": 1502,
+          "unique_values": 1
+        },
+        "ch1_adc": {
+          "minimum": 1486,
+          "maximum": 1526,
+          "unique_values": 38
+        },
+        "ch1_power": {
+          "minimum": 1,
+          "maximum": 10,
+          "unique_values": 10
+        },
+        "ch1_level": {
+          "minimum": 0,
+          "maximum": 0,
+          "unique_values": 1
+        },
+        "ch2_mean": {
+          "minimum": 2480,
+          "maximum": 2480,
+          "unique_values": 1
+        },
+        "ch2_adc": {
+          "minimum": 0,
+          "maximum": 4095,
+          "unique_values": 557
+        },
+        "ch2_power": {
+          "minimum": 1921,
+          "maximum": 2255,
+          "unique_values": 314
+        },
+        "ch2_level": {
+          "minimum": 0,
+          "maximum": 255,
+          "unique_values": 254
+        }
+      }
+    },
+    {
+      "record_id": "S01",
+      "filename": "20261125_230211_2835c7.csv",
+      "description": "Initial single-channel recording",
+      "sha256": "8ca83e28b912a4f693a3be7343e333ac125f77816e163224a8cbb2420fc66f58",
+      "size_bytes": 645541,
+      "rows": 10817,
+      "first_host_elapsed_s": 275.512897333,
+      "last_host_elapsed_s": 310.466926375,
+      "host_span_s": 34.954029042,
+      "received_frames_per_s": 309.43500066912827,
+      "first_frame_index": 84992,
+      "last_frame_index": 95808,
+      "nonunit_frame_increments": 0,
+      "equal_adjacent_host_timestamps": 170,
+      "equal_adjacent_host_timestamp_pct": 1.5717455621301775,
+      "decreasing_host_timestamps": 0,
+      "source_kinds": [
+        "device"
+      ],
+      "channels": {
+        "ch1": {
+          "mean_counts": 1503.526116298419,
+          "centered_rms_counts": 3.2401759434857955,
+          "minimum_counts": 1497,
+          "maximum_counts": 1539,
+          "zero_count": 0,
+          "code_4095_count": 0,
+          "boundary_code_pct": 0.0,
+          "largest_positive_psd_peak_cycles_per_frame": 0.1611328125
+        },
+        "ch2": {
+          "mean_counts": 1573.7046315984098,
+          "centered_rms_counts": 1313.264912166394,
+          "minimum_counts": 0,
+          "maximum_counts": 4095,
+          "zero_count": 2401,
+          "code_4095_count": 21,
+          "boundary_code_pct": 22.39068133493575,
+          "largest_positive_psd_peak_cycles_per_frame": 0.1611328125
+        }
+      },
+      "device_fields": {
+        "ch1_mean": {
+          "minimum": 1502,
+          "maximum": 1502,
+          "unique_values": 1
+        },
+        "ch1_adc": {
+          "minimum": 1497,
+          "maximum": 1539,
+          "unique_values": 29
+        },
+        "ch1_power": {
+          "minimum": 0,
+          "maximum": 12,
+          "unique_values": 12
+        },
+        "ch1_level": {
+          "minimum": 0,
+          "maximum": 0,
+          "unique_values": 1
+        },
+        "ch2_mean": {
+          "minimum": 2480,
+          "maximum": 2480,
+          "unique_values": 1
+        },
+        "ch2_adc": {
+          "minimum": 0,
+          "maximum": 4095,
+          "unique_values": 3510
+        },
+        "ch2_power": {
+          "minimum": 870,
+          "maximum": 1949,
+          "unique_values": 987
+        },
+        "ch2_level": {
+          "minimum": 0,
+          "maximum": 255,
+          "unique_values": 256
+        }
+      }
+    },
+    {
+      "record_id": "S02",
+      "filename": "20261125_231208_8ff529.csv",
+      "description": "Single-channel, knee reference and stronger effort",
+      "sha256": "89d361938c7c4ce6ab691654d87edac14e1908174ee68c178386e8fd891b31f2",
+      "size_bytes": 624306,
+      "rows": 10676,
+      "first_host_elapsed_s": 21.3117625,
+      "last_host_elapsed_s": 55.941275625,
+      "host_span_s": 34.629513125,
+      "received_frames_per_s": 308.2630691764887,
+      "first_frame_index": 6628,
+      "last_frame_index": 17303,
+      "nonunit_frame_increments": 0,
+      "equal_adjacent_host_timestamps": 184,
+      "equal_adjacent_host_timestamp_pct": 1.7236533957845432,
+      "decreasing_host_timestamps": 0,
+      "source_kinds": [
+        "device"
+      ],
+      "channels": {
+        "ch1": {
+          "mean_counts": 1503.751405020607,
+          "centered_rms_counts": 1.063294263755266,
+          "minimum_counts": 1498,
+          "maximum_counts": 1506,
+          "zero_count": 0,
+          "code_4095_count": 0,
+          "boundary_code_pct": 0.0,
+          "largest_positive_psd_peak_cycles_per_frame": 0.21630859375
+        },
+        "ch2": {
+          "mean_counts": 1519.6380666916448,
+          "centered_rms_counts": 171.36058617860616,
+          "minimum_counts": 991,
+          "maximum_counts": 2021,
+          "zero_count": 0,
+          "code_4095_count": 0,
+          "boundary_code_pct": 0.0,
+          "largest_positive_psd_peak_cycles_per_frame": 0.162109375
+        }
+      },
+      "device_fields": {
+        "ch1_mean": {
+          "minimum": 1502,
+          "maximum": 1502,
+          "unique_values": 1
+        },
+        "ch1_adc": {
+          "minimum": 1498,
+          "maximum": 1506,
+          "unique_values": 9
+        },
+        "ch1_power": {
+          "minimum": 0,
+          "maximum": 2,
+          "unique_values": 3
+        },
+        "ch1_level": {
+          "minimum": 0,
+          "maximum": 0,
+          "unique_values": 1
+        },
+        "ch2_mean": {
+          "minimum": 2480,
+          "maximum": 2480,
+          "unique_values": 1
+        },
+        "ch2_adc": {
+          "minimum": 991,
+          "maximum": 2021,
+          "unique_values": 747
+        },
+        "ch2_power": {
+          "minimum": 884,
+          "maximum": 1084,
+          "unique_values": 160
+        },
+        "ch2_level": {
+          "minimum": 0,
+          "maximum": 255,
+          "unique_values": 170
+        }
+      }
+    },
+    {
+      "record_id": "D01",
+      "filename": "20261125_232138_110cad.csv",
+      "description": "Dual-channel triceps and biceps recording",
+      "sha256": "ef05c53a83c2db6a226ac1b2212e870e4b2d57bc5f8fb790288aee70f86be6d2",
+      "size_bytes": 1872960,
+      "rows": 30835,
+      "first_host_elapsed_s": 80.183575,
+      "last_host_elapsed_s": 183.55356625,
+      "host_span_s": 103.36999124999998,
+      "received_frames_per_s": 298.28772961224377,
+      "first_frame_index": 24090,
+      "last_frame_index": 54924,
+      "nonunit_frame_increments": 0,
+      "equal_adjacent_host_timestamps": 616,
+      "equal_adjacent_host_timestamp_pct": 1.9977946422780046,
+      "decreasing_host_timestamps": 0,
+      "source_kinds": [
+        "device"
+      ],
+      "channels": {
+        "ch1": {
+          "mean_counts": 1504.0470893465217,
+          "centered_rms_counts": 66.35028724153969,
+          "minimum_counts": 1011,
+          "maximum_counts": 2213,
+          "zero_count": 0,
+          "code_4095_count": 0,
+          "boundary_code_pct": 0.0,
+          "largest_positive_psd_peak_cycles_per_frame": 0.16796875
+        },
+        "ch2": {
+          "mean_counts": 1518.51461002108,
+          "centered_rms_counts": 75.96244968764884,
+          "minimum_counts": 620,
+          "maximum_counts": 2363,
+          "zero_count": 0,
+          "code_4095_count": 0,
+          "boundary_code_pct": 0.0,
+          "largest_positive_psd_peak_cycles_per_frame": 0.1279296875
+        }
+      },
+      "device_fields": {
+        "ch1_mean": {
+          "minimum": 1502,
+          "maximum": 1502,
+          "unique_values": 1
+        },
+        "ch1_adc": {
+          "minimum": 1011,
+          "maximum": 2213,
+          "unique_values": 687
+        },
+        "ch1_power": {
+          "minimum": 2,
+          "maximum": 285,
+          "unique_values": 254
+        },
+        "ch1_level": {
+          "minimum": 0,
+          "maximum": 0,
+          "unique_values": 1
+        },
+        "ch2_mean": {
+          "minimum": 2480,
+          "maximum": 2480,
+          "unique_values": 1
+        },
+        "ch2_adc": {
+          "minimum": 620,
+          "maximum": 2363,
+          "unique_values": 839
+        },
+        "ch2_power": {
+          "minimum": 814,
+          "maximum": 1219,
+          "unique_values": 257
+        },
+        "ch2_level": {
+          "minimum": 0,
+          "maximum": 255,
+          "unique_values": 246
+        }
+      }
+    }
+  ],
+  "dual_channel_intervals": [
+    {
+      "repetition": 1,
+      "condition": 1,
+      "repeat_within_condition": 1,
+      "intended_action": "Neutral arm, intended co-contraction",
+      "start_s": 5,
+      "end_s": 11,
+      "frames": 1790,
+      "ch1_centered_rms_counts": 81.15034581648602,
+      "ch2_centered_rms_counts": 91.14600634363937,
+      "prior_rest_start_s": 1.5,
+      "prior_rest_end_s": 4.5,
+      "prior_rest_frames": 910,
+      "prior_rest_ch1_centered_rms_counts": 9.717201342574619,
+      "prior_rest_ch2_centered_rms_counts": 3.1807310281134655
+    },
+    {
+      "repetition": 2,
+      "condition": 1,
+      "repeat_within_condition": 2,
+      "intended_action": "Neutral arm, intended co-contraction",
+      "start_s": 16,
+      "end_s": 21,
+      "frames": 1480,
+      "ch1_centered_rms_counts": 93.30189087598185,
+      "ch2_centered_rms_counts": 65.9982236816045,
+      "prior_rest_start_s": 12.5,
+      "prior_rest_end_s": 15.5,
+      "prior_rest_frames": 904,
+      "prior_rest_ch1_centered_rms_counts": 11.105412834306398,
+      "prior_rest_ch2_centered_rms_counts": 2.1950378752513675
+    },
+    {
+      "repetition": 3,
+      "condition": 2,
+      "repeat_within_condition": 1,
+      "intended_action": "Extended elbow, intended co-contraction",
+      "start_s": 26,
+      "end_s": 31,
+      "frames": 1487,
+      "ch1_centered_rms_counts": 100.58114543451478,
+      "ch2_centered_rms_counts": 96.5213545295216,
+      "prior_rest_start_s": 22.5,
+      "prior_rest_end_s": 25.5,
+      "prior_rest_frames": 897,
+      "prior_rest_ch1_centered_rms_counts": 20.90515776405925,
+      "prior_rest_ch2_centered_rms_counts": 3.763379897575413
+    },
+    {
+      "repetition": 4,
+      "condition": 2,
+      "repeat_within_condition": 2,
+      "intended_action": "Extended elbow, intended co-contraction",
+      "start_s": 35,
+      "end_s": 41,
+      "frames": 1787,
+      "ch1_centered_rms_counts": 85.11464210617086,
+      "ch2_centered_rms_counts": 111.9466603666138,
+      "prior_rest_start_s": 31.5,
+      "prior_rest_end_s": 34.5,
+      "prior_rest_frames": 894,
+      "prior_rest_ch1_centered_rms_counts": 24.320767432190696,
+      "prior_rest_ch2_centered_rms_counts": 17.19654772904654
+    },
+    {
+      "repetition": 5,
+      "condition": 3,
+      "repeat_within_condition": 1,
+      "intended_action": "Extended elbow, intended triceps activation",
+      "start_s": 45,
+      "end_s": 51,
+      "frames": 1790,
+      "ch1_centered_rms_counts": 66.65590949722997,
+      "ch2_centered_rms_counts": 53.88581674154793,
+      "prior_rest_start_s": 41.5,
+      "prior_rest_end_s": 44.5,
+      "prior_rest_frames": 903,
+      "prior_rest_ch1_centered_rms_counts": 17.589134562262736,
+      "prior_rest_ch2_centered_rms_counts": 16.447745996042656
+    },
+    {
+      "repetition": 6,
+      "condition": 3,
+      "repeat_within_condition": 2,
+      "intended_action": "Extended elbow, intended triceps activation",
+      "start_s": 55,
+      "end_s": 61,
+      "frames": 1789,
+      "ch1_centered_rms_counts": 59.35158738849104,
+      "ch2_centered_rms_counts": 40.793857440806306,
+      "prior_rest_start_s": 51.5,
+      "prior_rest_end_s": 54.5,
+      "prior_rest_frames": 901,
+      "prior_rest_ch1_centered_rms_counts": 12.75420298102102,
+      "prior_rest_ch2_centered_rms_counts": 10.116044207765333
+    },
+    {
+      "repetition": 7,
+      "condition": 4,
+      "repeat_within_condition": 1,
+      "intended_action": "Flexed elbow, intended co-contraction",
+      "start_s": 65,
+      "end_s": 71,
+      "frames": 1774,
+      "ch1_centered_rms_counts": 100.75683097659004,
+      "ch2_centered_rms_counts": 86.89220250548213,
+      "prior_rest_start_s": 61.5,
+      "prior_rest_end_s": 64.5,
+      "prior_rest_frames": 900,
+      "prior_rest_ch1_centered_rms_counts": 15.371975904543808,
+      "prior_rest_ch2_centered_rms_counts": 9.139973998396176
+    },
+    {
+      "repetition": 8,
+      "condition": 4,
+      "repeat_within_condition": 2,
+      "intended_action": "Flexed elbow, intended co-contraction",
+      "start_s": 76,
+      "end_s": 81,
+      "frames": 1488,
+      "ch1_centered_rms_counts": 82.87646342915576,
+      "ch2_centered_rms_counts": 71.71265241264459,
+      "prior_rest_start_s": 72.5,
+      "prior_rest_end_s": 75.5,
+      "prior_rest_frames": 896,
+      "prior_rest_ch1_centered_rms_counts": 17.55849470791402,
+      "prior_rest_ch2_centered_rms_counts": 11.904200920329695
+    },
+    {
+      "repetition": 9,
+      "condition": 5,
+      "repeat_within_condition": 1,
+      "intended_action": "Flexed elbow, intended biceps activation",
+      "start_s": 86,
+      "end_s": 92,
+      "frames": 1777,
+      "ch1_centered_rms_counts": 97.8972879357853,
+      "ch2_centered_rms_counts": 127.8071892860405,
+      "prior_rest_start_s": 82.5,
+      "prior_rest_end_s": 85.5,
+      "prior_rest_frames": 894,
+      "prior_rest_ch1_centered_rms_counts": 18.127529789139057,
+      "prior_rest_ch2_centered_rms_counts": 9.486621232725842
+    },
+    {
+      "repetition": 10,
+      "condition": 5,
+      "repeat_within_condition": 2,
+      "intended_action": "Flexed elbow, intended biceps activation",
+      "start_s": 96,
+      "end_s": 102,
+      "frames": 1777,
+      "ch1_centered_rms_counts": 101.63721548274252,
+      "ch2_centered_rms_counts": 180.33595800102518,
+      "prior_rest_start_s": 92.5,
+      "prior_rest_end_s": 95.5,
+      "prior_rest_frames": 893,
+      "prior_rest_ch1_centered_rms_counts": 25.764993323824363,
+      "prior_rest_ch2_centered_rms_counts": 24.176605130505507
+    }
+  ],
+  "dual_channel_conditions": [
+    {
+      "condition": 1,
+      "intended_action": "Neutral arm, intended co-contraction",
+      "repetitions": 2,
+      "ch1_mean_of_rep_centered_rms_counts": 87.22611834623393,
+      "ch2_mean_of_rep_centered_rms_counts": 78.57211501262194
+    },
+    {
+      "condition": 2,
+      "intended_action": "Extended elbow, intended co-contraction",
+      "repetitions": 2,
+      "ch1_mean_of_rep_centered_rms_counts": 92.84789377034282,
+      "ch2_mean_of_rep_centered_rms_counts": 104.2340074480677
+    },
+    {
+      "condition": 3,
+      "intended_action": "Extended elbow, intended triceps activation",
+      "repetitions": 2,
+      "ch1_mean_of_rep_centered_rms_counts": 63.003748442860505,
+      "ch2_mean_of_rep_centered_rms_counts": 47.33983709117712
+    },
+    {
+      "condition": 4,
+      "intended_action": "Flexed elbow, intended co-contraction",
+      "repetitions": 2,
+      "ch1_mean_of_rep_centered_rms_counts": 91.8166472028729,
+      "ch2_mean_of_rep_centered_rms_counts": 79.30242745906335
+    },
+    {
+      "condition": 5,
+      "intended_action": "Flexed elbow, intended biceps activation",
+      "repetitions": 2,
+      "ch1_mean_of_rep_centered_rms_counts": 99.76725170926392,
+      "ch2_mean_of_rep_centered_rms_counts": 154.07157364353284
+    }
+  ],
+  "single_channel_band_metadata": [
+    {
+      "record_id": "S01",
+      "selected_peak_cycles_per_frame": 0.1611328125,
+      "halfwidth_cycles_per_frame": 0.005,
+      "full_record_selected_bands_power_fraction": 0.985536974399279
+    },
+    {
+      "record_id": "S02",
+      "selected_peak_cycles_per_frame": 0.162109375,
+      "halfwidth_cycles_per_frame": 0.005,
+      "full_record_selected_bands_power_fraction": 0.9394355911539711
+    }
+  ],
+  "single_channel_band_sensitivity": [
+    {
+      "excluded_halfwidth_cycles_per_frame": 0.003,
+      "mean_rest_outside_bands_amplitude_counts": 22.82029867107181,
+      "mean_activity_outside_bands_amplitude_counts": 52.275972089241854,
+      "activity_over_rest_ratio": 2.2907663410869192
+    },
+    {
+      "excluded_halfwidth_cycles_per_frame": 0.005,
+      "mean_rest_outside_bands_amplitude_counts": 22.40694910731299,
+      "mean_activity_outside_bands_amplitude_counts": 51.73114348819802,
+      "activity_over_rest_ratio": 2.308709822137921
+    },
+    {
+      "excluded_halfwidth_cycles_per_frame": 0.01,
+      "mean_rest_outside_bands_amplitude_counts": 22.129553910695613,
+      "mean_activity_outside_bands_amplitude_counts": 50.10125373992596,
+      "activity_over_rest_ratio": 2.2639974552632585
+    },
+    {
+      "excluded_halfwidth_cycles_per_frame": 0.015,
+      "mean_rest_outside_bands_amplitude_counts": 21.87406720322475,
+      "mean_activity_outside_bands_amplitude_counts": 48.60957649651829,
+      "activity_over_rest_ratio": 2.2222468297689097
+    }
+  ],
+  "dual_channel_boundary_sensitivity": [
+    {
+      "trim_each_edge_s": 0.0,
+      "condition": 1,
+      "ch1_mean_centered_rms_counts": 87.22611834623393,
+      "ch2_mean_centered_rms_counts": 78.57211501262194,
+      "ch2_condition5_over_condition3": 3.254586055013013
+    },
+    {
+      "trim_each_edge_s": 0.0,
+      "condition": 2,
+      "ch1_mean_centered_rms_counts": 92.84789377034282,
+      "ch2_mean_centered_rms_counts": 104.2340074480677,
+      "ch2_condition5_over_condition3": 3.254586055013013
+    },
+    {
+      "trim_each_edge_s": 0.0,
+      "condition": 3,
+      "ch1_mean_centered_rms_counts": 63.003748442860505,
+      "ch2_mean_centered_rms_counts": 47.33983709117712,
+      "ch2_condition5_over_condition3": 3.254586055013013
+    },
+    {
+      "trim_each_edge_s": 0.0,
+      "condition": 4,
+      "ch1_mean_centered_rms_counts": 91.8166472028729,
+      "ch2_mean_centered_rms_counts": 79.30242745906335,
+      "ch2_condition5_over_condition3": 3.254586055013013
+    },
+    {
+      "trim_each_edge_s": 0.0,
+      "condition": 5,
+      "ch1_mean_centered_rms_counts": 99.76725170926392,
+      "ch2_mean_centered_rms_counts": 154.07157364353284,
+      "ch2_condition5_over_condition3": 3.254586055013013
+    },
+    {
+      "trim_each_edge_s": 0.25,
+      "condition": 1,
+      "ch1_mean_centered_rms_counts": 89.87052057187415,
+      "ch2_mean_centered_rms_counts": 80.9458328711191,
+      "ch2_condition5_over_condition3": 3.32089305391525
+    },
+    {
+      "trim_each_edge_s": 0.25,
+      "condition": 2,
+      "ch1_mean_centered_rms_counts": 92.38922433659496,
+      "ch2_mean_centered_rms_counts": 104.80493619668911,
+      "ch2_condition5_over_condition3": 3.32089305391525
+    },
+    {
+      "trim_each_edge_s": 0.25,
+      "condition": 3,
+      "ch1_mean_centered_rms_counts": 65.27320528408785,
+      "ch2_mean_centered_rms_counts": 48.35524317604771,
+      "ch2_condition5_over_condition3": 3.32089305391525
+    },
+    {
+      "trim_each_edge_s": 0.25,
+      "condition": 4,
+      "ch1_mean_centered_rms_counts": 94.93451734064743,
+      "ch2_mean_centered_rms_counts": 81.62384168820478,
+      "ch2_condition5_over_condition3": 3.32089305391525
+    },
+    {
+      "trim_each_edge_s": 0.25,
+      "condition": 5,
+      "ch1_mean_centered_rms_counts": 103.98704550578299,
+      "ch2_mean_centered_rms_counts": 160.58259118371961,
+      "ch2_condition5_over_condition3": 3.32089305391525
+    },
+    {
+      "trim_each_edge_s": 0.5,
+      "condition": 1,
+      "ch1_mean_centered_rms_counts": 90.18326641842498,
+      "ch2_mean_centered_rms_counts": 82.1728198906852,
+      "ch2_condition5_over_condition3": 3.4618862655054174
+    },
+    {
+      "trim_each_edge_s": 0.5,
+      "condition": 2,
+      "ch1_mean_centered_rms_counts": 92.54880253016887,
+      "ch2_mean_centered_rms_counts": 104.27007803004463,
+      "ch2_condition5_over_condition3": 3.4618862655054174
+    },
+    {
+      "trim_each_edge_s": 0.5,
+      "condition": 3,
+      "ch1_mean_centered_rms_counts": 66.58325556669034,
+      "ch2_mean_centered_rms_counts": 48.42119880416976,
+      "ch2_condition5_over_condition3": 3.4618862655054174
+    },
+    {
+      "trim_each_edge_s": 0.5,
+      "condition": 4,
+      "ch1_mean_centered_rms_counts": 97.12810062987654,
+      "ch2_mean_centered_rms_counts": 82.40532644502188,
+      "ch2_condition5_over_condition3": 3.4618862655054174
+    },
+    {
+      "trim_each_edge_s": 0.5,
+      "condition": 5,
+      "ch1_mean_centered_rms_counts": 108.72421427287114,
+      "ch2_mean_centered_rms_counts": 167.62868309946265,
+      "ch2_condition5_over_condition3": 3.4618862655054174
+    }
+  ]
+}

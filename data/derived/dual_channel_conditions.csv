@@ -1,0 +1,6 @@
+condition,intended_action,repetitions,ch1_mean_of_rep_centered_rms_counts,ch2_mean_of_rep_centered_rms_counts
+1,"Neutral arm, intended co-contraction",2,87.22611834623393,78.57211501262194
+2,"Extended elbow, intended co-contraction",2,92.84789377034282,104.2340074480677
+3,"Extended elbow, intended triceps activation",2,63.003748442860505,47.33983709117712
+4,"Flexed elbow, intended co-contraction",2,91.8166472028729,79.30242745906335
+5,"Flexed elbow, intended biceps activation",2,99.76725170926392,154.07157364353284
